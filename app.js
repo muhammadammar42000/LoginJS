@@ -74,7 +74,7 @@ signUpBtn.addEventListener('click', (e) => {
 
 
 
-//All Base Functions
+                                                                            //All Base Functions
 
 
 //Login With Google
@@ -146,6 +146,9 @@ var loginWithEmailAndPass = async (email, pass) => {
         localStorage.setItem('auth2', JSON.stringify(myData));
 
         console.log(data);
+
+        location.assign("./CV-Builder/index.html")
+
     } catch (error) {
         console.log(error.code);
         if (error.code === "auth/user-not-found") {
